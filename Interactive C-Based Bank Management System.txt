@@ -1,0 +1,47 @@
+# Bank Management System
+
+A console-based Bank Management System developed in C. This project simulates basic banking operations with a colorful terminal user interface.
+
+
+
+## Features
+
+
+
+* **Register New Customer:** Create a new bank account with an initial deposit.
+* **Remove Customer:** Delete an existing account from the system using the account number.
+* **Deposit Funds:** Add money to a specific account.
+* **Withdraw Funds:** Deduct money from an account (includes insufficient funds checking).
+* **Check Balance:** View the current balance and details of a specific account.
+* **List All Customers:** Display a formatted table of all registered customers and their balances.
+
+
+
+## Technologies Used
+
+
+
+* C Programming Language
+* Standard C Libraries (`stdio.h`, `stdlib.h`, `string.h`)
+* ANSI Escape Codes (for terminal text coloring)
+
+
+
+## How to Compile and Run
+
+
+
+1.  Ensure you have a C compiler installed (like GCC).
+2.  Open your terminal or command prompt.
+3.  Navigate to the directory containing the source code.
+4.  Compile the code using the following command:
+    ```bash
+    gcc bank_management.c -o bank_management
+    ```
+5.  Run the compiled executable:
+    * On Linux/macOS: `./bank_management`
+    * On Windows: `bank_management.exe`
+
+## Note on Terminal Colors
+
+This program uses ANSI color codes to enhance the user interface. If your terminal does not support ANSI colors, you may see raw escape characters (e.g., `\033[1;31m`) instead of colored text. Most modern terminals support this feature by default.
